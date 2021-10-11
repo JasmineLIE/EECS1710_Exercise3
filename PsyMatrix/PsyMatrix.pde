@@ -10,7 +10,7 @@ import gifAnimation.*;
 */
 
 Clock c1;
-Nevaeh n1;
+Characters cc1;
 
 Gif theMesa;
 SoundFile bgMusic;
@@ -20,7 +20,7 @@ PImage mainScreen, cursor;
 public void setup() {
   size(870, 388, P2D);
    c1 = new Clock(590, 199); 
-   n1 = new Nevaeh();
+   cc1 = new Characters();
   theMesa = new Gif(this, "themesa.gif");
   theMesa.loop();
   bgMusic = new SoundFile(this, "Synth.mp3");
@@ -35,7 +35,6 @@ public void setup() {
 
 void draw() {
   background(theMesa);
-  
   int t = millis();
  
   
@@ -43,7 +42,9 @@ void draw() {
   image(mainScreen, 435, 194);
     imageMode(CENTER);
  c1.run();
-n1.run();
+cc1.run();
+
+
 
 
 
