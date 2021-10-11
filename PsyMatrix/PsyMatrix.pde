@@ -7,6 +7,10 @@ import gifAnimation.*;
 *This direction for this exercise was inspired by a Text Adventure story I hold with a friend.
 * Counting the time passing, four chat notifications will pop up on the left side of the interface, right under DreamIt.  
 *Each has a 5 second interval before appearing after the previous.  The notifications can open chat menus by pressing the assigned numbered keys 1-4.  If the notification has NOT appeared yet, the chat menu won't open
+*Background Music: https://www.youtube.com/watch?v=K3QfcHbrDJ8
+*Sound Effects in declaration order: https://freesound.org/people/InspectorJ/sounds/403019/,  https://freesound.org/people/BenjaminNelan/sounds/321082/,  https://freesound.org/people/ZoviPoland/sounds/517717/
+*All artwork sans the GIF background is illustrated by me
+*GIF background: https://i.imgur.com/dU18gto.gif
 */
 
 Clock c1;
