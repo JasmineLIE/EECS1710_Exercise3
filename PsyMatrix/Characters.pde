@@ -49,10 +49,11 @@ Characters() {
  marcusChat = loadImage("marcusChat.png");
  jackNotif = loadImage("jackNotif.png");
  jackChat = loadImage("jackChat.png");
+
  
 }
   
-  void update() { //this is for measuring time and interactions, sets the booleans
+  void update() { //this is for measuring time and interactions, sets the booleans.  the t timer waits on the time being calculated.  Upon reaching a set time, each notif will be set from false to true
        
      int t = millis();
     if (t >= nevaehVisibleTime) { 
@@ -75,7 +76,7 @@ Characters() {
     }
   }
   
-  void draw() { //this responds to the boolean results
+  void draw() { //this responds to the boolean results, essentially when the timer for a notification has reached its goal, the message will generate and appear alongside a sound effect
    int t = millis();
   if (t >= nevaehVisibleTime) {
     notifPop.play();
